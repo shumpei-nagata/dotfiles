@@ -1,8 +1,8 @@
+#!/bin/zsh
+
 has() {
     type "$1" > /dev/null 2>&1
 }
-
-set -e
 
 # Install Homebrew
 echo "Check if Homebrew is available."
