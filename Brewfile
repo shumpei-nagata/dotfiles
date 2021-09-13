@@ -3,6 +3,7 @@ tap "homebrew/cask-fonts"
 
 # formulae
 brew "ffmpeg"
+brew "git-extras"
 brew "mint"
 brew "rbenv"
 brew "swagger-codegen"
