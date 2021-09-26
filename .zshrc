@@ -1,7 +1,3 @@
-# path
-export MINT_PATH="$HOME/.mint"
-export MINT_LINK_PATH="$MINT_PATH/bin"
-
 # alias
 alias sz="source ~/.zshrc"
 alias ls="ls -G"
