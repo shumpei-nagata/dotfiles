@@ -10,6 +10,7 @@ brew "swagger-codegen"
 brew "tree"
 
 # cask
+cask "adobe-creative-cloud"
 cask "alfred"
 cask "appcleaner"
 cask "charles"
@@ -32,4 +33,5 @@ cask "xcodes"
 cask "zoom"
 
 # Mac App Store
+mas "Amazon Prime Video", id: 545519333
 mas "RunCat", id: 1429033973
