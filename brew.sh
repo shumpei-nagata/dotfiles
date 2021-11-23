@@ -12,6 +12,7 @@ else
     echo "Homebrew does not exist."
     echo "Installing Homebrew..."
     ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+    eval $(/opt/homebrew/bin/brew shellenv)
 fi
 
 # Update Homebrew

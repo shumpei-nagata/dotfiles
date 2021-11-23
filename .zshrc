@@ -5,7 +5,11 @@ alias ll="ls -l"
 alias la="ls -al"
 alias mkdir="mkdir -p"
 
-# rbenv init
+# Homebrew
+eval $(/opt/homebrew/bin/brew shellenv)
+
+# rbenv
+export PATH="$HOME/.rbenv/bin:$PATH"
 eval "$(rbenv init -)"
 
 # -----------------------------
