@@ -35,3 +35,4 @@ cask "zoom"
 # Mac App Store
 mas "Amazon Prime Video", id: 545519333
 mas "RunCat", id: 1429033973
+mas "Spark", id: 1176895641
