@@ -6,11 +6,23 @@ alias la="ls -al"
 alias mkdir="mkdir -p"
 
 # Homebrew
-eval $(/opt/homebrew/bin/brew shellenv)
+function () {
+    local BREW_PATH=/opt/homebrew/bin
+    if [ -d $BREW_PATH ]; then
+        eval $($BREW_PATH/brew shellenv)
+    fi
+}
 
 # rbenv
-export PATH="$HOME/.rbenv/bin:$PATH"
-eval "$(rbenv init -)"
+function () {
+    local RBENV_PATH=$HOME/.rbenv/bin
+    if ! [[ $PATH =~ $RBENV_PATH ]]; then
+        export PATH=$RBENV_PATH:$PATH
+    fi
+}
+if ! [[ $PATH =~ $HOME/.rbenv/shims ]]; then
+    eval "$(rbenv init -)"
+fi
 
 # -----------------------------
 # General
