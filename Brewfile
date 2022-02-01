@@ -2,8 +2,10 @@
 tap "homebrew/cask-fonts"
 
 # formulae
+brew "awscli"
 brew "ffmpeg"
 brew "git-extras"
+brew "jq"
 brew "mint"
 brew "rbenv"
 brew "swagger-codegen"
