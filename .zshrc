@@ -5,6 +5,11 @@ alias ll="ls -l"
 alias la="ls -al"
 alias mkdir="mkdir -p"
 
+# make gif
+function makegif {
+    ffmpeg -i $1 -vf scale=320:-1 -r 10 "$1".gif
+}
+
 # Homebrew
 function () {
     local BREW_PATH=/opt/homebrew/bin
