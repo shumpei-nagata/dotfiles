@@ -14,6 +14,7 @@ brew "tree"
 # cask
 cask "adobe-creative-cloud"
 cask "alfred"
+cask "android-studio"
 cask "appcleaner"
 cask "brooklyn"
 cask "charles"
