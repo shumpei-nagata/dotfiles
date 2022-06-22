@@ -1,10 +1,14 @@
 SHELL=/bin/zsh
-.PHONY: init deploy source brew
+.PHONY: init zim deploy source brew
 
 init:
+	$(MAKE) zim
 	$(MAKE) deploy
 	$(MAKE) source
 	$(MAKE) brew
+
+zim:
+	./zim.sh
 
 deploy:
 	./deploy.sh
