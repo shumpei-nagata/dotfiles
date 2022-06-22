@@ -179,7 +179,7 @@ setopt pushd_ignore_dups
 # -----------------------------
 
 # 自動補完を有効にする
-autoload -Uz compinit ; compinit
+# autoload -Uz compinit ; compinit
 
 # コマンドのスペルを訂正する
 setopt correct
