@@ -38,6 +38,7 @@ cask "slack"
 cask "spotify"
 cask "the-unarchiver"
 cask "visual-studio-code"
+cask "webex"
 cask "xcodes"
 cask "zoom"
 
