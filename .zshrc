@@ -159,6 +159,16 @@ if ! [[ $PATH =~ $HOME/.rbenv/shims ]]; then
     eval "$(rbenv init -)"
 fi
 
+# OpenJDK
+sudo ln -sfn /opt/homebrew/opt/openjdk/libexec/openjdk.jdk /Library/Java/JavaVirtualMachines/openjdk.jdk
+function () {
+    local OPENJDK_PATH=/opt/homebrew/opt/openjdk/bin
+    if ! [[ $PATH =~ $OPENJDK_PATH ]]; then
+        export PATH=$OPENJDK_PATH:$PATH
+    fi
+}
+export CPPFLAGS="-I/opt/homebrew/opt/openjdk/include"
+
 # -----------------------------
 # General
 # -----------------------------
