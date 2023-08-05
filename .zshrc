@@ -128,6 +128,9 @@ for key ('j') bindkey -M vicmd ${key} history-substring-search-down
 unset key
 # }}} End configuration added by Zim install
 
+# Locale
+export LC_ALL=ja_JP.UTF-8
+
 # alias
 alias sz="source ~/.zshrc"
 alias ls="ls -G"
