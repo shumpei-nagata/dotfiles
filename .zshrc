@@ -151,16 +151,7 @@ function () {
     fi
 }
 
-# rbenv
-function () {
-    local RBENV_PATH=$HOME/.rbenv/bin
-    if ! [[ $PATH =~ $RBENV_PATH ]]; then
-        export PATH=$RBENV_PATH:$PATH
-    fi
-}
-if ! [[ $PATH =~ $HOME/.rbenv/shims ]]; then
-    eval "$(rbenv init -)"
-fi
+. /opt/homebrew/opt/asdf/libexec/asdf.sh
 
 # OpenJDK
 sudo ln -sfn /opt/homebrew/opt/openjdk/libexec/openjdk.jdk /Library/Java/JavaVirtualMachines/openjdk.jdk

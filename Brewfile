@@ -2,6 +2,7 @@
 tap "homebrew/cask-fonts"
 
 # formulae
+brew "asdf"
 brew "awscli"
 brew "bash"
 brew "bloaty"
@@ -13,8 +14,6 @@ brew "jq"
 brew "kdoctor"
 brew "mint"
 brew "node"
-brew "openjdk"
-brew "rbenv"
 brew "swagger-codegen"
 brew "tree"
 
