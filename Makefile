@@ -6,6 +6,7 @@ init:
 	$(MAKE) deploy
 	$(MAKE) source
 	$(MAKE) brew
+	$(MAKE) asdf
 
 zim:
 	./zim.sh
@@ -18,3 +19,6 @@ source:
 
 brew:
 	./brew.sh
+
+asdf:
+	asdf install
