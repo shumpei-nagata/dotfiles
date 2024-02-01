@@ -21,4 +21,6 @@ brew:
 	./brew.sh
 
 asdf:
+	-asdf plugin add java
+	-asdf plugin add ruby
 	asdf install
