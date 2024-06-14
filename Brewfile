@@ -18,6 +18,7 @@ brew "tree"
 
 # cask
 cask "adobe-creative-cloud"
+cask "android-platform-tools"
 cask "android-studio"
 cask "appcleaner"
 cask "arc"
