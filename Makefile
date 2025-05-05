@@ -24,3 +24,4 @@ asdf:
 	-asdf plugin add java
 	-asdf plugin add ruby
 	asdf install
+	asdf reshim

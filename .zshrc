@@ -152,7 +152,11 @@ function () {
 }
 
 # asdf
-. /opt/homebrew/opt/asdf/libexec/asdf.sh
+export ASDF_DATA_DIR="$HOME/.asdf"
+# $PATHに$ASDF_DATA_DIRがなかったら追加する
+if [[ ! $PATH =~ $ASDF_DATA_DIR ]]; then \
+  export PATH="$ASDF_DATA_DIR/shims:$PATH"
+fi
 
 # Java
 export JAVA_HOME=$(asdf where java)
