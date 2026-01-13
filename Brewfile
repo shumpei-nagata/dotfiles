@@ -1,3 +1,6 @@
+# tap
+tap "pakerwreah/calendr"
+
 # formulae
 brew "asdf"
 brew "bash"
@@ -27,11 +30,11 @@ cask "ghostty"
 cask "github-copilot-for-xcode"
 cask "google-chrome"
 cask "iina"
-cask "itsycal"
 cask "karabiner-elements"
 cask "notion"
 cask "obsidian"
 cask "onyx"
+cask "pakerwreah/calendr/calendr"
 cask "proxyman"
 cask "raycast"
 cask "sf-symbols"
