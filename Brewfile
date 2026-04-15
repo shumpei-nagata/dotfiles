@@ -43,7 +43,7 @@ cask "spotify"
 cask "thebrowsercompany-dia"
 cask "the-unarchiver"
 cask "visual-studio-code"
-cask "xcodes"
+cask "xcodes-app"
 cask "zoom"
 
 # Mac App Store
