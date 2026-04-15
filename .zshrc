@@ -158,6 +158,11 @@ if [[ ! $PATH =~ $ASDF_DATA_DIR ]]; then \
   export PATH="$ASDF_DATA_DIR/shims:$PATH"
 fi
 
+# local bin
+if [[ ! $PATH =~ $HOME/.local/bin ]]; then
+    export PATH="$HOME/.local/bin:$PATH"
+fi
+
 # Java
 export JAVA_HOME=$(asdf where java)
 
@@ -218,6 +223,3 @@ setopt hist_reduce_blanks
 
 # スペースから始まるコマンド行はヒストリに残さない
 setopt hist_ignore_space
-
-# ヒストリに保存するときに余分なスペースを削除する
-setopt hist_reduce_blanks
