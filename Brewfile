@@ -4,6 +4,7 @@ tap "pakerwreah/calendr"
 # formulae
 brew "asdf"
 brew "bash"
+brew "exiftool"
 brew "ffmpeg"
 brew "git-extras"
 brew "git-lfs"
